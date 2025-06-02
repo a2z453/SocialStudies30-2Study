@@ -31,202 +31,792 @@ export default function Home() {
           </div>
         </div>
         {/* Main Content */}
-        <div className="col-md-9">
-          {/* Section 1: Introduction */}
-          <div className="section" id="intro">
-            <h2>Introduction to Social Studies 30-2</h2>
-            <p>Social Studies 30-2 focuses on understanding ideologies and their impact on the world. This course explores liberalism, alternative ideologies, and their roles in shaping political, economic, and social systems.</p>
-            <p><strong>Key Themes:</strong></p>
-            <ul>
-              <li>Origins and impacts of liberalism.</li>
-              <li>Competing ideologies: communism, fascism, socialism.</li>
-              <li>Global issues: human rights, globalization, environment.</li>
-              <li>Skills: source analysis, critical thinking, position papers.</li>
-            </ul>
-            <p>This guide provides summaries, activities, and practice questions to prepare for the Alberta Social Studies 30-2 diploma exam.</p>
-          </div>
-          {/* Section 2: Liberalism */}
-          <div className="section" id="liberalism">
-            <h2>Liberalism</h2>
-            <h3>Core Principles</h3>
-            <p>Liberalism emphasizes individual freedoms, equality, and democratic governance. It emerged during the Enlightenment (17th–18th centuries).</p>
-            <ul>
-              <li><strong>Individual Rights:</strong> Freedom of speech, religion, press.</li>
-              <li><strong>Rule of Law:</strong> Equal treatment under the law.</li>
-              <li><strong>Democracy:</strong> Citizen participation in governance.</li>
-              <li><strong>Economic Freedom:</strong> Free markets, private property.</li>
-            </ul>
-            <h3>Historical Development</h3>
-            <p>Key events:</p>
-            <ul>
-              <li><strong>Magna Carta (1215):</strong> Limited monarch’s power.</li>
-              <li><strong>English Bill of Rights (1689):</strong> Established parliamentary supremacy.</li>
-              <li><strong>American Revolution (1776):</strong> Promoted democratic ideals.</li>
-              <li><strong>French Revolution (1789):</strong> Advanced equality, liberty.</li>
-            </ul>
-            <h3>Modern Liberalism</h3>
-            <p>Balances individual freedoms with collective welfare (e.g., social programs). Examples: Canadian Charter of Rights and Freedoms, U.S. Constitution.</p>
-          </div>
-          {/* Section 3: Ideologies */}
-          <div className="section" id="ideologies">
-            <h2>Competing Ideologies</h2>
-            <h3>Communism vs. Fascism</h3>
-            <p>Drag and drop the characteristics to the correct ideology:</p>
-            <div className="drag-drop">
-              <div className="draggable" data-ideology="communism">Classless society</div>
-              <div className="draggable" data-ideology="fascism">Extreme nationalism</div>
-              <div className="draggable" data-ideology="communism">State-controlled economy</div>
-              <div className="draggable" data-ideology="fascism">Suppression of dissent</div>
-              <div className="dropzone" id="communism">Communism</div>
-              <div className="dropzone" id="fascism">Fascism</div>
-            </div>
-            <h3>Socialism</h3>
-            <p>Advocates collective ownership, wealth redistribution. Example: Nordic model (high taxes, social services).</p>
-            <h3>Historical Examples</h3>
-            <ul>
-              <li><strong>Communism:</strong> Soviet Union (1917–1991), Mao’s China.</li>
-              <li><strong>Fascism:</strong> Nazi Germany, Mussolini’s Italy.</li>
-              <li><strong>Socialism:</strong> Post-WWII European welfare states.</li>
-            </ul>
-          </div>
-          {/* Section 4: Cold War */}
-          <div className="section" id="cold-war">
-            <h2>The Cold War</h2>
-            <p>A geopolitical conflict (1947–1991) between the U.S. (capitalism) and Soviet Union (communism).</p>
-            <h3>Key Events</h3>
-            <ul>
-              <li><strong>Berlin Blockade (1948–1949):</strong> Soviet attempt to control West Berlin.</li>
-              <li><strong>Korean War (1950–1953):</strong> Proxy war; North (communist) vs. South (capitalist).</li>
-              <li><strong>Cuban Missile Crisis (1962):</strong> U.S.-Soviet nuclear standoff.</li>
-              <li><strong>Fall of Berlin Wall (1989):</strong> Symbolized end of Cold War.</li>
-            </ul>
-            <h3>Alliances</h3>
-            <p>Drag and drop the countries to the correct alliance:</p>
-            <div className="drag-drop">
-              <div className="draggable" data-alliance="nato">United States</div>
-              <div className="draggable" data-alliance="warsaw">Soviet Union</div>
-              <div className="draggable" data-alliance="nato">Canada</div>
-              <div className="draggable" data-alliance="warsaw">East Germany</div>
-              <div className="dropzone" id="nato">NATO</div>
-              <div className="dropzone" id="warsaw">Warsaw Pact</div>
-            </div>
-          </div>
-          {/* Section 5: Economic Systems */}
-          <div className="section" id="economic-systems">
-            <h2>Economic Systems</h2>
-            <h3>Capitalism</h3>
-            <p>Private ownership, free markets. Example: U.S. economy.</p>
-            <h3>Command Economy</h3>
-            <p>Government controls production. Example: Soviet Union.</p>
-            <h3>Mixed Economy</h3>
-            <p>Combines market and government roles. Example: Canada (healthcare, free markets).</p>
-            <p><strong>Activity:</strong> Analyze the cartoon below to identify economic biases.</p>
-            <Image src="/assets/labor-cartoon.png" alt="Labor Cartoon" width={400} height={300} />
-          </div>
-          {/* Section 6: Globalization */}
-          <div className="section" id="globalization">
-            <h2>Globalization</h2>
-            <p>Interconnectedness of economies, cultures, and politics.</p>
-            <h3>Pros</h3>
-            <ul>
-              <li>Increased trade, economic growth.</li>
-              <li>Cultural exchange, technology transfer.</li>
-            </ul>
-            <h3>Cons</h3>
-            <ul>
-              <li>Job losses in developed nations.</li>
-              <li>Cultural homogenization, inequality.</li>
-            </ul>
-            <p><strong>Data Analysis:</strong> Examine the graph below to assess globalization’s impact on income inequality.</p>
-            <Image src="/assets/family-income-graph.png" alt="Family Income Graph" width={500} height={300} />
-          </div>
-          {/* Section 7: Human Rights */}
-          <div className="section" id="humanRights">
-            <h2>Human Rights</h2>
-            <p>Universal entitlements (e.g., life, liberty, security).</p>
-            <h3>Key Documents</h3>
-            <ul>
-              <li><strong>Universal Declaration of Human Rights (1948):</strong> UN framework.</li>
-              <li><strong>Canadian Charter of Rights and Freedoms (1982):</strong> Protects individual rights.</li>
-            </ul>
-            <h3>Issues</h3>
-            <ul>
-              <li>Gender equality: Wage gaps, representation.</li>
-              <li>Refugee rights: Asylum policies, displacement.</li>
-            </ul>
-          </div>
-          {/* Section 8: Indigenous Perspectives */}
-          <div className="section" id="indigenous">
-            <h2>Indigenous Perspectives</h2>
-            <p>Focuses on Indigenous experiences in Canada.</p>
-            <h3>Key Issues</h3>
-            <ul>
-              <li><strong>Residential Schools:</strong> Cultural assimilation, intergenerational trauma.</li>
-              <li><strong>Land Rights:</strong> Treaty disputes, resource development.</li>
-              <li><strong>Truth and Reconciliation:</strong> Calls to Action (2015).</li>
-            </ul>
-            <p><strong>Activity:</strong> Read a residential school survivor’s account and reflect on its impact.</p>
-          </div>
-          {/* Section 9: Environmental Ideologies */}
-          <div className="section" id="environment">
-            <h2>Environmental Ideologies</h2>
-            <p>Balancing economic growth and sustainability.</p>
-            <h3>Perspectives</h3>
-            <ul>
-              <li><strong>Deep Ecology:</strong> Nature has intrinsic value.</li>
-              <li><strong>Market Environmentalism:</strong> Free markets solve environmental issues.</li>
-            </ul>
-            <h3>Issues</h3>
-            <ul>
-              <li>Climate change: Carbon emissions, renewable energy.</li>
-              <li>Resource extraction: Oil sands vs. Indigenous rights.</li>
-            </ul>
-          </div>
-          {/* Section 10: Source Analysis */}
-          <div className="section" id="source-analysis">
-            <h2>Source Analysis</h2>
-            <p>Skills for interpreting sources (cartoons, quotes, graphs).</p>
-            <h3>Steps</h3>
-            <ul>
-              <li><strong>Identify:</strong> Source type, author, context.</li>
-              <li><strong>Analyze:</strong> Bias, perspective, ideology.</li>
-              <li><strong>Connect:</strong> Link to liberalism or other ideologies.</li>
-            </ul>
-            <p><strong>Practice:</strong> Analyze the following cartoon for bias.</p>
-            <Image src="/assets/political-cartoon.png" alt="Political Cartoon" width={400} height={300} />
-          </div>
-                    {/* Section 11: Exam Preparation */}
-          <div className="section" id="exam-prep">
-            <h2>Exam Preparation</h2>
-            <h3>Diploma Exam Structure</h3>
-            <p>Social Studies 30-2 exam (Alberta):</p>
-            <ul>
-              <li><strong>Part A: Written Response</strong> Source analysis (3 sources: cartoon, quote, graph); position paper on ideological issue.</li>
-              <li><strong>Part B: Multiple Choice</strong> 50–60 questions; tests knowledge, source interpretation.</li>
-            </ul>
-            <h3>Tips</h3>
-            <ul>
-              <li><strong>Source Analysis:</strong> Practice identifying bias, perspective; link to ideologies.</li>
-              <li><strong>Position Paper:</strong> Clear thesis; use evidence (historical, contemporary); address counterarguments.</li>
-              <li><strong>Multiple Choice:</strong> Focus on key terms, events; eliminate wrong answers.</li>
-              <li><strong>Time Management:</strong> Part A (2–3 hours), Part B (1 hour).</li>
-            </ul>
-            <h3>Sample Position Paper Prompt</h3>
-            <p><strong>Prompt:</strong> To what extent should individual rights be sacrificed for collective security?</p>
-            <p><strong>Outline:</strong></p>
-            <ul>
-              <li><strong>Thesis:</strong> Individual rights should be balanced with collective security, as extreme sacrifices undermine liberalism.</li>
-              <li><strong>Evidence:</strong> Patriot Act (2001) vs. Canadian Charter; WWII internment vs. modern surveillance.</li>
-              <li><strong>Counterargument:</strong> Security prevents terrorism but risks authoritarianism.</li>
-            </ul>
-            <h3>Glossary</h3>
-            <div className="glossary">
-              <div className="glossary-item"><strong>Thesis:</strong> Main argument in an essay.</div>
-              <div className="glossary-item"><strong>Counterargument:</strong> Opposing viewpoint addressed.</div>
-              <div className="glossary-item"><strong>Source Interpretation:</strong> Analyzing documents for meaning.</div>
-            </div>
-          </div>
-          {/* Section 12: Review Questions */}
+        <div class="col-md-9">
+                <div class="section" id="intro">
+                    <h1>Social Studies 30-2 Comprehensive Study Guide</h1>
+                    <p>This extensive guide is designed for Alberta’s Social Studies 30-2 curriculum, providing an in-depth exploration of ideologies, their historical and contemporary impacts, and their role in shaping global societies. It covers liberalism, competing ideologies (e.g., communism, fascism, socialism, conservatism), the Cold War, economic systems, globalization, human rights, Indigenous perspectives, environmental ideologies, and source analysis skills. Interactive elements, primary sources, and practice questions align with curriculum outcomes, preparing students for diploma exams.</p>
+                    <h2>Key Themes</h2>
+                    <ul>
+                        <li><strong>Ideological Conflict:</strong> How competing beliefs (e.g., liberalism vs. communism) drive individual, national, and global actions.</li>
+                        <li><strong>Liberalism:</strong> Core principles (e.g., individual rights, democracy) and their evolution in response to challenges.</li>
+                        <li><strong>Global Impact:</strong> Historical events (e.g., Cold War) and modern issues (e.g., globalization, human rights) shaped by ideologies.</li>
+                        <li><strong>Critical Thinking:</strong> Analyzing sources (e.g., cartoons, documents) to evaluate perspectives and biases.</li>
+                    </ul>
+                    <h2>Curriculum Outcomes</h2>
+                    <p>Students will:</p>
+                    <ul>
+                        <li>Understand the origins and impacts of ideologies.</li>
+                        <li>Evaluate liberalism’s role in democratic societies.</li>
+                        <li>Analyze historical and contemporary issues through ideological lenses.</li>
+                        <li>Develop source interpretation and critical thinking skills for exams.</li>
+                    </ul>
+                </div>
+          {/* Section 1: Liberalism */}
+<div class="section" id="liberalism">
+                    <h2>Liberalism</h2>
+                    <h3>Core Principles</h3>
+                    <p>Liberalism is a political and economic ideology centered on individual freedoms, equality, and democratic governance. It emerged during the Enlightenment, challenging absolute monarchy, feudalism, and religious authority.</p>
+                    <ul>
+                        <li><strong>Individual Rights and Freedoms:</strong> Freedom of speech, religion, press, and assembly, protected by law.</li>
+                        <li><strong>Rule of Law:</strong> All individuals and institutions are accountable to fair, transparent laws.</li>
+                        <li><strong>Democracy:</strong> Government derives legitimacy from the consent of the governed via free elections.</li>
+                        <li><strong>Economic Freedom:</strong> Classical liberalism promotes free markets with minimal government intervention (laissez-faire).</li>
+                        <li><strong>Social Equality:</strong> Modern liberalism advocates welfare programs, social safety nets, and equal opportunities to address inequalities.</li>
+                        <li><strong>Tolerance and Pluralism:</strong> Respect for diverse beliefs, cultures, and lifestyles.</li>
+                    </ul>
+                    <h3>Historical Development</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>17th Century: Roots</h4>
+                            <p>John Locke’s social contract theory argued that government exists to protect life, liberty, and property, inspiring liberal revolutions.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>18th Century: Enlightenment</h4>
+                            <p>Thinkers like Voltaire (freedom of expression), Montesquieu (separation of powers), and Rousseau (popular sovereignty) shaped liberal ideals. The American (1776) and French (1789) Revolutions applied these principles.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>19th Century: Classical Liberalism</h4>
+                            <p>Adam Smith’s <em>Wealth of Nations</em> (1776) promoted free markets. Industrial Revolution highlighted tensions between wealth and worker exploitation, prompting reforms.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>20th Century: Modern Liberalism</h4>
+                            <p>Great Depression (1929) led to Keynesian economics, emphasizing government intervention (e.g., New Deal). Welfare states emerged in Canada, Europe.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>21st Century: Challenges</h4>
+                            <p>Globalization, populism, and authoritarianism test liberalism. Issues like climate change and digital privacy demand new liberal responses.</p>
+                        </div>
+                    </div>
+                    <h3>Key Thinkers</h3>
+                    <div class="event">
+                        <p><strong>John Locke (1632–1704):</strong> Social contract; government protects natural rights (life, liberty, property). Influenced American Constitution.</p>
+                        <p><strong>Adam Smith (1723–1790):</strong> Invisible hand; free markets drive prosperity via competition. Critiqued monopolies.</p>
+                        <p><strong>John Stuart Mill (1806–1873):</strong> Harm principle; individual liberty unless harming others. Advocated women’s rights, free speech.</p>
+                        <p><strong>John Maynard Keynes (1883–1946):</strong> Government intervention to stabilize economies during crises. Shaped modern liberalism.</p>
+                    </div>
+                    <h3>Liberalism in Canada</h3>
+                    <p>Canada embodies modern liberalism through:</p>
+                    <ul>
+                        <li><strong>Canadian Charter of Rights and Freedoms (1982):</strong> Guarantees fundamental freedoms, legal rights, equality.</li>
+                        <li><strong>Multiculturalism Policy (1971):</strong> Promotes cultural diversity, tolerance.</li>
+                        <li><strong>Social Programs:</strong> Universal healthcare (1966), Employment Insurance, Canada Pension Plan.</li>
+                        <li><strong>Progressive Reforms:</strong> Same-sex marriage (2005), cannabis legalization (2018).</li>
+                    </ul>
+                    <p><strong>Challenges:</strong> Balancing individual rights with collective needs (e.g., Indigenous reconciliation, Quebec’s Bill 21 on secularism).</p>
+                    <h3>Global Challenges to Liberalism</h3>
+                    <p>Liberalism faces threats from:</p>
+                    <ul>
+                        <li><strong>Populism:</strong> Anti-elite movements (e.g., Brexit, Trumpism) reject liberal institutions.</li>
+                        <li><strong>Authoritarianism:</strong> Rise of regimes in China, Russia, Turkey limiting freedoms.</li>
+                        <li><strong>Economic Inequality:</strong> Globalization widens wealth gaps, fueling discontent.</li>
+                        <li><strong>Technology:</strong> Surveillance, misinformation challenge privacy, free speech.</li>
+                    </ul>
+                    <h3>Primary Source: Locke’s Second Treatise</h3>
+                    <div class="source">
+                        <p><strong>Excerpt (1689):</strong></p>
+                        <p class="source-excerpt">“The state of nature has a law of nature to govern it, which obliges every one: and reason, which is that law, teaches all mankind… that being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions.”</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What liberal principles are evident in this excerpt?</li>
+                            <li>How does Locke’s view contrast with absolute monarchy?</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Classical Liberalism:</strong> Free markets, limited government.</div>
+                        <div class="glossary-item"><strong>Modern Liberalism:</strong> Welfare, social equality.</div>
+                        <div class="glossary-item"><strong>Social Contract:</strong> Agreement between people and government.</div>
+                        <div class="glossary-item"><strong>Pluralism:</strong> Acceptance of diverse beliefs.</div>
+                    </div>
+                </div>
+          {/* Section 2: Ideologies */}
+<div class="section" id="ideologies">
+                    <h2>Competing Ideologies</h2>
+                    <h3>Communism</h3>
+                    <div class="ideology">
+                        <p><strong>Theory:</strong> Classless, stateless society; collective ownership of production to eliminate exploitation (Karl Marx, Friedrich Engels, <em>Communist Manifesto</em>, 1848).</p>
+                        <p><strong>Practice:</strong> Soviet Union (1917–1991) under Lenin, Stalin became authoritarian; state-controlled economy, purges, gulags. Mao’s China (1949–1976) saw Great Leap Forward failures, Cultural Revolution.</p>
+                        <p><strong>Case Study: Mao’s China</strong></p>
+                        <p>Great Leap Forward (1958–1962): Collectivization led to famine, 20–45 million deaths. Cultural Revolution (1966–1976): Purged intellectuals, disrupted education.</p>
+                    </div>
+                    <h3>Fascism</h3>
+                    <div class="ideology">
+                        <p><strong>Theory:</strong> Totalitarian state, extreme nationalism, suppression of dissent, cult of leader (Benito Mussolini).</p>
+                        <p><strong>Practice:</strong> Nazi Germany (1933–1945) under Hitler promoted racial purity (Aryan supremacy), militarism, Holocaust (6 million Jews killed). Mussolini’s Italy (1922–1943) suppressed unions, invaded Ethiopia.</p>
+                        <p><strong>Case Study: Mussolini’s Italy</strong></p>
+                        <p>Corporate state merged government and business; propaganda glorified Mussolini. Invasion of Ethiopia (1935) violated League of Nations, showing fascist aggression.</p>
+                    </div>
+                    <h3>Socialism</h3>
+                    <div class="ideology">
+                        <p><strong>Theory:</strong> Collective or state ownership of key industries; prioritizes equality, social welfare (Robert Owen, utopian socialism).</p>
+                        <p><strong>Practice:</strong> Democratic socialism in Scandinavia (e.g., Sweden, Norway) uses high taxes to fund universal healthcare, education. Contrasts with authoritarian socialism (e.g., Cuba).</p>
+                        <p><strong>Case Study: Sweden</strong></p>
+                        <p>Mixed economy with 50% tax rate; funds free education, healthcare. Maintains private enterprise, high living standards.</p>
+                    </div>
+                    <h3>Conservatism</h3>
+                    <div class="ideology">
+                        <p><strong>Theory:</strong> Values tradition, social stability, gradual change (Edmund Burke). Opposes rapid reforms, emphasizes institutions (e.g., family, religion).</p>
+                        <p><strong>Practice:</strong> UK’s Conservative Party balances tradition with economic liberalism. In Canada, Conservative Party supports free markets, social order.</p>
+                        <p><strong>Case Study: UK</strong></p>
+                        <p>Thatcher’s policies (1979–1990) privatized industries, reduced union power, reflecting economic conservatism.</p>
+                    </div>
+                    <h3>Anarchism</h3>
+                    <div class="ideology">
+                        <p><strong>Theory:</strong> Rejects all forms of authority (government, capitalism); advocates voluntary cooperation (Mikhail Bakunin, Pierre-Joseph Proudhon).</p>
+                        <p><strong>Practice:</strong> Limited historical examples (e.g., Spanish Civil War communes, 1936–1939). Modern movements focus on grassroots activism.</p>
+                        <p><strong>Case Study: Rojava (Syria)</strong></p>
+                        <p>Kurdish region (2010s) experiments with decentralized, egalitarian governance, inspired by anarcho-socialism.</p>
+                    </div>
+                    <h3>Environmentalism</h3>
+                    <div class="ideology">
+                        <p><strong>Theory:</strong> Prioritizes environmental protection, sustainability; often critiques capitalism’s ecological impact (Rachel Carson, <em>Silent Spring</em>, 1962).</p>
+                        <p><strong>Practice:</strong> Green parties (e.g., Germany’s Greens) advocate renewable energy, carbon taxes. Indigenous environmental movements protect land rights.</p>
+                        <p><strong>Case Study: Germany</strong></p>
+                        <p>Energiewende policy (2000s) shifts to renewables, reducing coal reliance by 50% by 2020.</p>
+                    </div>
+                    <h3>Ideological Spectrum</h3>
+                    <div class="graph-placeholder">
+                        <p>[Insert Diagram: Ideological Spectrum]</p>
+                        <p><strong>Description:</strong> Left (communism, socialism) emphasizes equality, collective control; right (conservatism, classical liberalism) prioritizes tradition, individual freedom. Center (modern liberalism, democratic socialism) balances both.</p>
+                    </div>
+                    <h3>Interactive: Communism vs. Fascism</h3>
+                    <p><strong>Drag and drop characteristics to the correct ideology. Double-click to remove. Submit to check answers.</strong></p>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Communism</h4>
+                            <div class="drop-zone" id="communismZone"></div>
+                            <h4>Fascism</h4>
+                            <div class="drop-zone" id="fascismZone"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Characteristics</h4>
+                            <div id="characteristics">
+                                <div class="draggable" draggable="true" data-id="classless">Classless society</div>
+                                <div class="draggable" draggable="true" data-id="state-controlled">State-controlled economy</div>
+                                <div class="draggable" draggable="true" data-id="nationalism">Nationalism and militarism</div>
+                                <div class="draggable" draggable="true" data-id="dictatorship">Single-party dictatorship</div>
+                                <div class="draggable" draggable="true" data-id="collective">Collective ownership</div>
+                                <div class="draggable" draggable="true" data-id="racial">Racial purity and eugenics</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="submitIdeologies">Submit Answers</button>
+                    <div id="ideologyFeedback" class="mt-3"></div>
+                    <h3>Primary Source: Marx’s Communist Manifesto</h3>
+                    <div class="source">
+                        <p><strong>Excerpt (1848):</strong></p>
+                        <p class="source-excerpt">“The history of all hitherto existing society is the history of class struggles… The proletariat will use its political supremacy to wrest all capital from the bourgeoisie.”</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What is the main conflict Marx identifies?</li>
+                            <li>How does this contrast with liberalism’s view of society?</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Proletariat:</strong> Working class in Marxist theory.</div>
+                        <div class="glossary-item"><strong>Bourgeoisie:</strong> Capitalist class owning production.</div>
+                        <div class="glossary-item"><strong>Totalitarianism:</strong> Absolute state control over society.</div>
+                        <div class="glossary-item"><strong>Nationalism:</strong> Loyalty to nation, often above other values.</div>
+                    </div>
+                </div>
+          {/* Section 3: Cold War */}
+<div class="section" id="cold-war">
+                    <h2>The Cold War (1945–1991)</h2>
+                    <h3>Overview</h3>
+                    <p>The Cold War was a global ideological struggle between the USA (democratic capitalism) and USSR (communism), fought through proxy wars, arms races, space races, espionage, and diplomacy. It shaped international relations, divided Europe, and influenced domestic policies (e.g., Red Scare).</p>
+                    <h3>Origins</h3>
+                    <p><strong>Post-WWII Tensions:</strong></p>
+                    <ul>
+                        <li><strong>Ideological Divide:</strong> USA promoted democracy, free markets; USSR advocated communism, state control.</li>
+                        <li><strong>Power Vacuum:</strong> WWII left Europe devastated; USA and USSR emerged as superpowers.</li>
+                        <li><strong>Mistrust:</strong> Stalin’s expansion in Eastern Europe clashed with US containment policy.</li>
+                    </ul>
+                    <h3>Wartime Conferences</h3>
+                    <div class="event">
+                        <h4>Yalta Conference (Feb 1945)</h4>
+                        <p><strong>Attendees:</strong> Franklin Roosevelt (USA), Winston Churchill (UK), Joseph Stalin (USSR).</p>
+                        <p><strong>Goals:</strong> Reorganize Europe, end German militarism, establish UN.</p>
+                        <p><strong>Outcomes:</strong></p>
+                        <ul>
+                            <li>Germany divided into four zones (USA, UK, France, USSR).</li>
+                            <li>Soviet control of Eastern Poland; Poland gained German territory.</li>
+                            <li>Commitment to democratic elections in liberated nations (often ignored by USSR).</li>
+                            <li>UN conference planned for April 1945.</li>
+                        </ul>
+                    </div>
+                    <div class="event">
+                        <h4>Potsdam Conference (Jul–Aug 1945)</h4>
+                        <p><strong>Attendees:</strong> Harry Truman (USA), Clement Attlee (UK), Stalin (USSR).</p>
+                        <p><strong>Outcomes:</strong></p>
+                        <ul>
+                            <li>Confirmed Germany’s four-zone division.</li>
+                            <li>Reordered German economy, banned Nazi institutions.</li>
+                            <li>Ultimatum to Japan: surrender or face destruction.</li>
+                            <li>Truman’s anti-communism highlighted growing tensions.</li>
+                        </ul>
+                        <p><strong>Impact:</strong> Set stage for Soviet-Western rivalry, forming Cold War blocs.</p>
+                    </div>
+                    <h3>Division of Germany</h3>
+                    <p><strong>1945:</strong> Germany and Berlin split into four zones. Berlin, within Soviet zone, was also divided.</p>
+                    <p><strong>1948–1949: Berlin Blockade</strong></p>
+                    <ul>
+                        <li>USSR blocked land routes to West Berlin to force Allied withdrawal.</li>
+                        <li>Allies launched Berlin Airlift, delivering 13,000 tons of supplies daily for 11 months.</li>
+                        <li>Stalin lifted blockade in May 1949, fearing escalation.</li>
+                    </ul>
+                    <p><strong>1949:</strong> West Germany (Federal Republic, FRG) formed by USA, UK, France; East Germany (German Democratic Republic, GDR) formed by USSR.</p>
+                    <p><strong>1961: Berlin Wall</strong></p>
+                    <ul>
+                        <li>Built by GDR to stop defections (3M fled 1945–1961).</li>
+                        <li>Symbols: Brandenburg Gate, Checkpoint Charlie.</li>
+                        <li>“Death Strip” between walls claimed 140+ lives.</li>
+                    </ul>
+                    <p><strong>1990: Reunification</strong></p>
+                    <ul>
+                        <li>Berlin Wall fell (Nov 9, 1989) amid Gorbachev’s reforms.</li>
+                        <li>Germany reunited Oct 3, 1990; economic challenges followed.</li>
+                    </ul>
+                    <h3>Key Events</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>1946: Iron Curtain Speech</h4>
+                            <p>Churchill warned of Soviet control over Eastern Europe, coining “Iron Curtain.”</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1947: Truman Doctrine</h4>
+                            <p>USA pledged $400M to Greece, Turkey to resist communism, launching containment.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1948: Marshall Plan</h4>
+                            <p>$13B to rebuild Western Europe, countering Soviet influence; rejected by USSR.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1949: NATO</h4>
+                            <p>North Atlantic Treaty Organization formed by USA, Canada, Western Europe for collective defense.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1950–1953: Korean War</h4>
+                            <p>Proxy war; US-led UN forces vs. Soviet/Chinese-backed North Korea. Ended in stalemate, DMZ established.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1955: Warsaw Pact</h4>
+                            <p>USSR’s counter-alliance with Eastern Europe, escalating tensions.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1956: Hungarian Revolt</h4>
+                            <p>Anti-Soviet uprising crushed by USSR; 2,500+ killed, 200,000 fled.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1957: Sputnik</h4>
+                            <p>USSR’s satellite launch sparked space race, raising US fears of Soviet tech superiority.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1960: U-2 Crisis</h4>
+                            <p>US spy plane shot down over USSR; pilot captured, escalating distrust.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1961: Bay of Pigs</h4>
+                            <p>Failed CIA-backed invasion of Cuba to overthrow Castro; embarrassed USA.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1962: Cuban Missile Crisis</h4>
+                            <p>USSR missiles in Cuba; US blockade; Khrushchev backed down after 13 days, averting nuclear war.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1963–1979: Détente</h4>
+                            <p>Reduced tensions; Nuclear Test Ban Treaty (1963), SALT (1969). Ended with Soviet invasion of Afghanistan.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1965–1975: Vietnam War</h4>
+                            <p>Proxy war; US-backed South Vietnam vs. Soviet/Chinese-backed North. US withdrawal 1973; North won 1975.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1979–1989: Soviet-Afghan War</h4>
+                            <p>USSR supported Afghan communists; USA backed Mujahideen. Drained Soviet resources.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1985: Gorbachev’s Reforms</h4>
+                            <p>Perestroika (economic restructuring), Glasnost (political openness) weakened Soviet control.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1989: Berlin Wall Falls</h4>
+                            <p>Symbolized Iron Curtain’s collapse; mass protests led to open borders.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1991: Soviet Union Dissolves</h4>
+                            <p>Gorbachev resigned Dec 25, 1991; Warsaw Pact dissolved; Russia declared independence.</p>
+                        </div>
+                    </div>
+                    <h3>Weimar Republic and Nazi Rise</h3>
+                    <p><strong>Treaty of Versailles (1919):</strong></p>
+                    <ul>
+                        <li><strong>Terms:</strong> $33B reparations, territorial losses (13% of land), military limits (100,000 troops, no air force).</li>
+                        <li><strong>Impact:</strong> Fueled resentment, economic hardship; “war guilt” clause humiliated Germany.</li>
+                        <li><strong>Was it a success?</strong> No; it destabilized Germany, enabling extremist rise.</li>
+                    </ul>
+                    <p><strong>Weimar Republic (1919–1933):</strong></p>
+                    <ul>
+                        <li><strong>Structure:</strong> Liberal democracy with universal suffrage, elected Reichstag.</li>
+                        <li><strong>Challenges:</strong> Hyperinflation (1923: 4.2T marks = $1), political extremism (communists, Nazis), Great Depression (1929: 6M unemployed).</li>
+                        <li><strong>Dawes Plan (1924):</strong> US loans stabilized currency, but collapsed in 1929.</li>
+                    </ul>
+                    <p><strong>Nazi Rise:</strong></p>
+                    <ul>
+                        <li><strong>Context:</strong> Economic despair, Versailles resentment, distrust in democracy.</li>
+                        <li><strong>Nazi Promises:</strong> Revive military, abolish Versailles, promote nationalism, racial purity, jobs, healthcare.</li>
+                        <li><strong>1923:</strong> Munich Putsch failed; Hitler imprisoned, wrote <em>Mein Kampf</em>.</li>
+                        <li><strong>1933:</strong> Nazis won 44% of Reichstag seats; Hitler appointed Chancellor.</li>
+                        <li><strong>Reichstag Fire (Feb 1933):</strong> Blamed on communists; led to Enabling Act, granting Hitler dictatorial powers.</li>
+                        <li><strong>1934:</strong> Night of the Long Knives (SA leaders killed); Hitler became Führer after Hindenburg’s death.</li>
+                        <li><strong>1935:</strong> Nuremberg Laws stripped Jews of citizenship.</li>
+                        <li><strong>1938:</strong> Kristallnacht; Jewish businesses, homes attacked.</li>
+                    </ul>
+                    <h3>Red Scare and McCarthyism</h3>
+                    <p><strong>Context:</strong> Post-WWII fear of communist infiltration in North America.</p>
+                    <p><strong>Key Events:</strong></p>
+                    <ul>
+                        <li><strong>1945: Gouzenko Affair</strong> Soviet defector in Canada exposed spy network, sparking panic.</li>
+                        <li><strong>1947–1954: McCarthyism</strong> US Senator Joseph McCarthy led witch hunts, accusing thousands (e.g., Hollywood, government) of communism without evidence. Ruined careers; Senate censured him in 1954.</li>
+                    </ul>
+                    <p><strong>Impact:</strong> Eroded civil liberties, fueled paranoia, undermined liberalism’s free speech principles.</p>
+                    <h3>Non-Alignment Movement</h3>
+                    <p><strong>Overview:</strong> Developing nations (e.g., India, Egypt, Indonesia) rejected Cold War alliances with USA or USSR.</p>
+                    <p><strong>Key Events:</strong></p>
+                    <ul>
+                        <li><strong>1955: Bandung Conference</strong> 29 African/Asian nations promoted cooperation, decolonization.</li>
+                        <li><strong>1961: NAM Formed</strong> Belgrade conference; focused on economic aid, neutrality.</li>
+                    </ul>
+                    <p><strong>Impact:</strong> Limited success; superpowers dominated global politics, but NAM amplified Third World voices.</p>
+                    <h3>Interactive: NATO vs. Warsaw Pact</h3>
+                    <p><strong>Drag and drop countries to their Cold War alliance. Double-click to remove. Submit to check answers.</strong></p>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>NATO</h4>
+                            <div class="drop-zone" id="natoZone"></div>
+                            <h4>Warsaw Pact</h4>
+                            <div class="drop-zone" id="warsawZone"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Countries</h4>
+                            <div id="countries">
+                                <div class="draggable" draggable="true" data-id="usa">USA</div>
+                                <div class="draggable" draggable="true" data-id="canada">Canada</div>
+                                <div class="draggable" draggable="true" data-id="poland">Poland</div>
+                                <div class="draggable" draggable="true" data-id="ussr">USSR</div>
+                                <div class="draggable" draggable="true" data-id="uk">UK</div>
+                                <div class="draggable" draggable="true" data-id="hungary">Hungary</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="submitAlliances">Submit Answers</button>
+                    <div id="allianceFeedback" class="mt-3"></div>
+                    <h3>Primary Source: Churchill’s Iron Curtain Speech</h3>
+                    <div class="source">
+                        <p><strong>Excerpt (Mar 5, 1946):</strong></p>
+                        <p class="source-excerpt">“From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent… Behind that line lie all the capitals of the ancient states of Central and Eastern Europe.”</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What does Churchill mean by “iron curtain”?</li>
+                            <li>How does this reflect Western fears of Soviet expansion?</li>
+                        </ul>
+                    </div>
+                    <h3>Political Cartoon Analysis</h3>
+                    <div class="cartoon-placeholder">
+                        <img src="./assets/labor-cartoon.png" alt="Labor Movement Cartoon (1917)" class="img-fluid"></img>
+                        <p><strong>Description:</strong> This 1917 cartoon, titled "The Hand That Will Rule the World—One Big Union," depicts a massive fist formed by workers holding tools, symbolizing the power of a united labor movement. The industrial background and ships suggest economic strength, while the Solidarity date (June 30, 1917) ties it to early 20th-century labor struggles, pre-dating the Cold War but relevant to ideological tensions between capitalism and socialism.</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What symbols represent the labor movement, and how do they contrast with capitalist imagery?</li>
+                            <li>How might this cartoon relate to Cold War ideologies like communism or socialism?</li>
+                            <li>Does the cartoon support or critique the working class? Explain your reasoning.</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Containment:</strong> US policy to limit Soviet expansion.</div>
+                        <div class="glossary-item"><strong>Mutually Assured Destruction (MAD):</strong> Nuclear war’s catastrophic outcome.</div>
+                        <div class="glossary-item"><strong>Proxy War:</strong> Indirect conflict via supported factions.</div>
+                        <div class="glossary-item"><strong>Espionage:</strong> Spying to gain strategic advantage.</div>
+                    </div>
+                </div>
+
+          {/* Section 4: Economic Systems */}
+          <div class="section" id="economic-systems">
+                    <h2>Economic Systems</h2>
+                    <h3>Free Market Economy</h3>
+                    <div class="event">
+                        <p><strong>Characteristics:</strong> Prices, wages set by supply/demand; private ownership; minimal government role.</p>
+                        <p><strong>Pros:</strong> Innovation, consumer choice, efficiency.</p>
+                        <p><strong>Cons:</strong> Wealth inequality, boom-bust cycles, environmental neglect.</p>
+                        <p><strong>Historical Example:</strong> USA’s Gilded Age (1870s–1900); rapid industrialization, monopolies (e.g., Rockefeller’s Standard Oil).</p>
+                        <p><strong>Case Study: 2008 Financial Crisis</strong></p>
+                        <p>Unregulated banking led to global recession; US bailouts ($700B) showed limits of laissez-faire.</p>
+                    </div>
+                    <h3>Command Economy</h3>
+                    <div class="event">
+                        <p><strong>Characteristics:</strong> Government controls production, distribution; no private ownership.</p>
+                        <p><strong>Pros:</strong> Equality, focus on social goals (e.g., healthcare).</p>
+                        <p><strong>Cons:</strong> Inefficiency, shortages, lack of innovation.</p>
+                        <p><strong>Historical Example:</strong> USSR’s Five-Year Plans (1928–1991); prioritized industry but caused famines (e.g., Holodomor, 1932–1933).</p>
+                        <p><strong>Case Study: Cuba</strong></p>
+                        <p>State-controlled economy; free healthcare, education, but shortages and low wages persist.</p>
+                    </div>
+                    <h3>Mixed Economy</h3>
+                    <div class="event">
+                        <p><strong>Characteristics:</strong> Blends market and government roles; private enterprise with social safety nets.</p>
+                        <p><strong>Pros:</strong> Balances freedom, equality; supports vulnerable populations.</p>
+                        <p><strong>Cons:</strong> High taxes, bureaucratic inefficiencies.</p>
+                        <p><strong>Historical Example:</strong> Canada’s post-WWII welfare state; universal healthcare (1966), EI.</p>
+                        <p><strong>Case Study: China</strong></p>
+                        <p>Hybrid model since 1978; state-controlled sectors (e.g., energy) with private enterprise; GDP grew 10% annually, but inequality rose.</p>
+                    </div>
+                    <h3>Economic Equality</h3>
+                    <p><strong>Approaches:</strong></p>
+                    <ul>
+                        <li><strong>Egalitarianism:</strong> Equal wealth distribution (e.g., universal basic income experiments).</li>
+                        <li><strong>Equality of Opportunity:</strong> Fair access to education, jobs (e.g., affirmative action).</li>
+                        <li><strong>Equitable Distribution:</strong> Progressive taxation (Canada: 15–33%), wealth redistribution.</li>
+                    </ul>
+                    <p><strong>Canadian Context:</strong></p>
+                    <ul>
+                        <li><strong>Taxation:</strong> Progressive rates; top 1% pay 20% of income taxes.</li>
+                        <li><strong>Social Programs:</strong> Child Tax Benefit, Old Age Security, EI.</li>
+                        <li><strong>Challenges:</strong> Gender pay gap (women earn $0.75 per $1 men earn); Indigenous poverty (25% live below poverty line).</li>
+                    </ul>
+                    <h3>Historical Crises</h3>
+                    <div class="event">
+                        <p><strong>Great Depression (1929–1939):</strong></p>
+                        <ul>
+                            <li><strong>Causes:</strong> Stock market crash, bank failures, overproduction.</li>
+                            <li><strong>Impact:</strong> 25% unemployment in Canada; led to welfare state (e.g., US New Deal).</li>
+                            <li><strong>Response:</strong> Keynesian policies; public works, social programs.</li>
+                        </ul>
+                    </div>
+                    <h3>Graph Analysis</h3>
+                    <div class="graph-placeholder">
+                        <img src="./assets/family-income-graph.png" alt="Family Income Distribution in Canada" class="img-fluid"></img>
+                        <p><strong>Summary:</strong> This bar graph displays the percentage of Canadian families within various income brackets (under $30,000 to over $250,000). Approximately 90% of families earn under $30,000, with the percentage dropping sharply to about 20% in the $30,000–$45,000 range and further declining to less than 5% for incomes over $150,000. This highlights significant income inequality in Canada.</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What does the high concentration of families under $30,000 suggest about income distribution?</li>
+                            <li>How does this data challenge or support the liberal principle of economic equality of opportunity?</li>
+                            <li>What policies (e.g., progressive taxation, social programs) might address the inequality shown?</li>
+                        </ul>
+                    </div>
+                    <h3>Primary Source: Keynes’ General Theory</h3>
+                    <div class="source">
+                        <p><strong>Excerpt (1936):</strong></p>
+                        <p class="source-excerpt">“The outstanding faults of the economic society in which we live are its failure to provide for full employment and its arbitrary and inequitable distribution of wealth and incomes.”</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What economic issues does Keynes highlight?</li>
+                            <li>How does this support modern liberalism?</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Keynesian Economics:</strong> Government spending to stimulate economy.</div>
+                        <div class="glossary-item"><strong>Regressive Tax:</strong> Higher burden on lower incomes.</div>
+                        <div class="glossary-item"><strong>Supply and Demand:</strong> Market forces setting prices.</div>
+                    </div>
+                </div>
+          {/* Section 5: Globalization */}
+          <div class="section" id="globalization">
+                    <h2>Globalization</h2>
+                    <h3>Definition</h3>
+                    <p>Globalization is the interconnectedness of economies, cultures, and political systems through trade, technology, migration, and communication, accelerated by post-WWII liberalization.</p>
+                    <h3>Key Aspects</h3>
+                    <ul>
+                        <li><strong>Economic:</strong> Free trade agreements (e.g., CUSMA, WTO), multinational corporations (e.g., Apple, Amazon).</li>
+                        <li><strong>Cultural:</strong> Spread of media (e.g., Hollywood, K-pop), languages (English as lingua franca).</li>
+                        <li><strong>Political:</strong> International organizations (UN, IMF, World Bank), global governance.</li>
+                        <li><strong>Environmental:</strong> Shared challenges (climate change, deforestation).</li>
+                    </ul>
+                    <h3>Impacts</h3>
+                    <p><strong>Positive:</strong></p>
+                    <ul>
+                        <li>Economic growth (e.g., China’s GDP rose 40x since 1980).</li>
+                        <li>Cultural exchange (e.g., global cuisine, music).</li>
+                        <li>Technological diffusion (e.g., internet access in 90% of countries).</li>
+                    </ul>
+                    <p><strong>Negative:</strong></p>
+                    <ul>
+                        <li>Inequality (top 1% own 50% of global wealth).</li>
+                        <li>Cultural homogenization (e.g., decline of Indigenous languages).</li>
+                        <li>Environmental degradation (e.g., 30% Amazon deforestation since 1970).</li>
+                    </ul>
+                    <h3>Trade Agreements</h3>
+                    <div class="event">
+                        <p><strong>CUSMA (2020):</strong> Replaced NAFTA; Canada, USA, Mexico. Promotes free trade, protects IP, but criticized for favoring corporations.</p>
+                        <p><strong>WTO (1995):</strong> 164 members; reduces trade barriers. Criticized for marginalizing developing nations.</p>
+                    </div>
+                    <h3>Case Studies</h3>
+                    <div class="event">
+                        <p><strong>India’s Tech Boom:</strong></p>
+                        <ul>
+                            <li>Post-1991 liberalization; IT sector grew 20% annually.</li>
+                            <li>Bangalore as “Silicon Valley”; employs 4M.</li>
+                            <li>Challenges: Rural poverty, digital divide.</li>
+                        </ul>
+                    </div>
+                    <div class="event">
+                        <p><strong>African Resource Exploitation:</strong></p>
+                        <ul>
+                            <li>Foreign firms (e.g., Chinese mining) extract oil, minerals.</li>
+                            <li>Benefits: Infrastructure investment.</li>
+                            <li>Issues: Environmental damage, local displacement, corruption.</li>
+                        </ul>
+                    </div>
+                    <h3>Map Analysis</h3>
+                    <div class="map-placeholder">
+                        <p>[Insert Map: Global Trade Routes]</p>
+                        <p><strong>Summary:</strong> Likely shows major routes (e.g., Asia-Europe via Suez, Trans-Pacific). Highlights China’s Belt and Road Initiative, US dominance in Pacific trade.</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>Which regions dominate global trade? Why?</li>
+                            <li>How does this reflect economic globalization?</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Trade Liberalization:</strong> Reducing trade barriers.</div>
+                        <div class="glossary-item"><strong>Multinational Corporation:</strong> Operates across countries.</div>
+                        <div class="glossary-item"><strong>Cultural Homogenization:</strong> Loss of cultural diversity.</div>
+                    </div>
+                </div>
+          {/* Section 6: Human Rights */}
+                          <div class="section" id="human-rights">
+                    <h2>Human Rights</h2>
+                    <h3>Principles</h3>
+                    <p>Human rights are universal, inalienable entitlements to life, liberty, security, and dignity, rooted in liberal principles of equality and justice.</p>
+                    <h3>Key Documents</h3>
+                    <ul>
+                        <li><strong>UN Universal Declaration of Human Rights (1948):</strong> 30 articles; rights to education, freedom from torture, fair trials.</li>
+                        <li><strong>Canadian Charter of Rights and Freedoms (1982):</strong> Protects freedoms (speech, religion), equality, legal rights.</li>
+                        <li><strong>Geneva Conventions (1949):</strong> Rules for wartime treatment of civilians, prisoners.</li>
+                    </ul>
+                    <h3>Historical Violations</h3>
+                    <div class="event">
+                        <p><strong>Holocaust (1933–1945):</strong></p>
+                        <ul>
+                            <li>Nazi genocide; 6M Jews, 5M others (Roma, disabled, homosexuals) killed.</li>
+                            <li>Led to Nuremberg Trials, UN human rights framework.</li>
+                        </ul>
+                    </div>
+                    <div class="event">
+                        <p><strong>South African Apartheid (1948–1994):</strong></p>
+                        <ul>
+                            <li>Racial segregation; Black South Africans denied voting, land rights.</li>
+                            <li>Ended via global sanctions, Nelson Mandela’s leadership.</li>
+                        </ul>
+                    </div>
+                    <div class="event">
+                        <p><strong>Rwandan Genocide (1994):</strong></p>
+                        <ul>
+                            <li>800,000 Tutsis killed by Hutus in 100 days.</li>
+                            <li>UN’s inaction criticized; led to International Criminal Court (ICC).</li>
+                        </ul>
+                    </div>
+                    <h3>Contemporary Issues</h3>
+                    <ul>
+                        <li><strong>Refugee Crises:</strong> 26M refugees (2023); Syria, Ukraine conflicts drive displacement.</li>
+                        <li><strong>Gender Equality:</strong> Global gender pay gap (20%); violence against women persists.</li>
+                        <li><strong>Climate Justice:</strong> Small island nations face existential threats; demand reparations from polluters.</li>
+                    </ul>
+                    <h3>Canadian Context</h3>
+                    <p><strong>Milestones:</strong></p>
+                    <ul>
+                        <li><strong>Japanese-Canadian Internment (1942):</strong> 22,000 relocated; 1988 apology, reparations.</li>
+                        <li><strong>Same-Sex Marriage (2005):</strong> Canada legalized nationwide, advancing equality.</li>
+                        <li><strong>Truth and Reconciliation Commission (2015):</strong> Addressed residential schools; 94 Calls to Action.</li>
+                    </ul>
+                    <p><strong>Challenges:</strong></p>
+                    <ul>
+                        <li>Indigenous rights: Missing and Murdered Indigenous Women (2,000+ cases), land disputes.</li>
+                        <li>Racial discrimination: Black Canadians face higher incarceration rates (7% of prison population vs. 3% of population).</li>
+                    </ul>
+                    <h3>International Frameworks</h3>
+                    <ul>
+                        <li><strong>International Criminal Court (2002):</strong> Prosecutes war crimes, genocide.</li>
+                        <li><strong>Amnesty International:</strong> Monitors abuses, advocates for prisoners of conscience.</li>
+                    </ul>
+                    <h3>Primary Source: UN Declaration</h3>
+                    <div class="source">
+                        <p><strong>Excerpt, Article 1 (1948):</strong></p>
+                        <p class="source-excerpt">“All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.”</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>How does this reflect liberal principles?</li>
+                            <li>Why might some nations resist this declaration?</li>
+                        </ul>
+                    </div>
+                    <h3>Data Analysis: Social Assistance</h3>
+                    <div class="graph-placeholder">
+                        <img src="./assets/social-assistance-graph.png" alt="Social Assistance Rates for Refugee Claimants" class="img-fluid"></img>
+                        <p><strong>Summary:</strong> This line graph tracks the percentage of refugee claimants in Canada receiving social assistance over four years since their claim, by cohort (1999, 2001, 2003, 2005, 2007). Initially, around 70% rely on assistance, declining to 20–30% by year four, with newer cohorts (e.g., 2007) showing a steeper drop. This reflects integration challenges and policy shifts.</p>
+                        <p><strong>Analysis Questions:</strong></p>
+                        <ul>
+                            <li>What trends can you identify in social assistance dependency across the cohorts?</li>
+                            <li>How might this data relate to human rights issues, such as access to economic security for refugees?</li>
+                            <li>Why might newer cohorts show a faster decline in assistance rates? Consider policy or economic factors.</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Inalienable:</strong> Rights that cannot be taken away.</div>
+                        <div class="glossary-item"><strong>Genocide:</strong> Deliberate extermination of a group.</div>
+                        <div class="glossary-item"><strong>Reconciliation:</strong> Restoring relations after injustice.</div>
+                    </div>
+                </div>
+          {/* Section 7: Indigenous Perspectives */}
+          <div class="section" id="indigenous">
+                    <h2>Indigenous Perspectives</h2>
+                    <h3>Overview</h3>
+                    <p>Indigenous perspectives emphasize holistic worldviews, land stewardship, and community, often clashing with liberal individualism and capitalist resource extraction.</p>
+                    <h3>Historical Context</h3>
+                    <p><strong>Colonialism:</strong></p>
+                    <ul>
+                        <li><strong>Treaties (1700s–1900s):</strong> Numbered Treaties (1–11) in Canada promised land, education; often violated.</li>
+                        <li><strong>Indian Act (1876):</strong> Controlled Indigenous lives; banned ceremonies, enforced reserves.</li>
+                        <li><strong>Residential Schools (1880s–1996):</strong> 150,000+ children; cultural assimilation; 6,000+ deaths.</li>
+                    </ul>
+                    <h3>Contemporary Issues</h3>
+                    <ul>
+                        <li><strong>Land Rights:</strong> Wet’suwet’en pipeline protests (2020) highlight treaty disputes.</li>
+                        <li><strong>Missing and Murdered Indigenous Women:</strong> 2019 inquiry found systemic racism in policing, justice.</li>
+                        <li><strong>Economic Marginalization:</strong> 25% of Indigenous Canadians live in poverty vs. 10% non-Indigenous.</li>
+                    </ul>
+                    <h3>Reconciliation Efforts</h3>
+                    <p><strong>Truth and Reconciliation Commission (2015):</strong></p>
+                    <ul>
+                        <li>94 Calls to Action: Education, health, justice reforms.</li>
+                        <li>Progress: 10% implemented by 2023; slow government action criticized.</li>
+                    </ul>
+                    <p><strong>UN Declaration on the Rights of Indigenous Peoples (2007):</strong> Canada endorsed 2016; affirms self-determination, land rights.</p>
+                    <h3>Case Study: Idle No More</h3>
+                    <p><strong>Overview:</strong> 2012 movement; protested Bill C-45, which weakened environmental protections on Indigenous lands.</p>
+                    <p><strong>Impact:</strong> Raised global awareness; spurred youth activism, round dances.</p>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Self-Determination:</strong> Indigenous control over governance, land.</div>
+                        <div class="glossary-item"><strong>Residential Schools:</strong> Forced assimilation institutions.</div>
+                        <div class="glossary-item"><strong>Treaty Rights:</strong> Legal agreements with Indigenous nations.</div>
+                    </div>
+                </div>
+          {/* Section 8: Environmental Ideologies */}
+          <div class="section" id="environment">
+                    <h2>Environmental Ideologies</h2>
+                    <h3>Overview</h3>
+                    <p>Environmental ideologies prioritize sustainability, challenging liberal and capitalist focus on growth. They range from reformist (green liberalism) to radical (deep ecology).</p>
+                    <h3>Key Perspectives</h3>
+                    <ul>
+                        <li><strong>Green Liberalism:</strong> Market-based solutions (e.g., carbon taxes); compatible with liberalism.</li>
+                        <li><strong>Eco-Socialism:</strong> Critiques capitalism’s environmental harm; advocates collective resource management.</li>
+                        <li><strong>Deep Ecology:</strong> All life has equal value; demands systemic change.</li>
+                        <li><strong>Indigenous Environmentalism:</strong> Land as sacred; e.g., Standing Rock protests (2016).</li>
+                    </ul>
+                    <h3>Key Issues</h3>
+                    <ul>
+                        <li><strong>Climate Change:</strong> Global temperatures up 1.1°C since 1900; 2030 targets unmet.</li>
+                        <li><strong>Deforestation:</strong> 10% of Amazon lost 1980–2020.</li>
+                        <li><strong>Pollution:</strong> 8M metric tons of plastic enter oceans annually.</li>
+                    </ul>
+                    <h3>Case Study: Canada’s Carbon Tax</h3>
+                    <p><strong>Overview:</strong> Introduced 2019; $50/ton in 2022, rising to $170 by 2030.</p>
+                    <p><strong>Impact:</strong> Reduced emissions 2–3% annually; rebates offset costs for low-income households.</p>
+                    <p><strong>Debate:</strong> Supports vs. critics argue it raises living costs.</p>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Sustainability:</strong> Meeting needs without harming future generations.</div>
+                        <div class="glossary-item"><strong>Carbon Tax:</strong> Fee on fossil fuel emissions.</div>
+                        <div class="glossary-item"><strong>Deep Ecology:</strong> Equal value for all life forms.</div>
+                    </div>
+                </div>
+          {/* Section 9: Source Analysis */}
+          <div class="section" id="source-analysis">
+                    <h2>Source Analysis Skills</h2>
+                    <h3>Overview</h3>
+                    <p>Social Studies 30-2 exams require analyzing sources (cartoons, quotes, graphs, maps) to identify perspectives, biases, and ideological implications.</p>
+                    <h3>Steps for Analysis</h3>
+                    <ul>
+                        <li><strong>Identify Source Type:</strong> Primary (e.g., speech) or secondary (e.g., textbook).</li>
+                        <li><strong>Context:</strong> When, where, who created it? Historical background?</li>
+                        <li><strong>Content:</strong> Key message, symbols, data, or arguments.</li>
+                        <li><strong>Perspective:</strong> Author’s ideology (e.g., liberal, communist)? Bias?</li>
+                        <li><strong>Purpose:</strong> Inform, persuade, critique?</li>
+                        <li><strong>Implications:</strong> How does it reflect or challenge ideologies?</li>
+                    </ul>
+                    <h3>Practice: Political Cartoon</h3>
+                    <div class="cartoon-placeholder">
+                        <img src="./assets/taxation-cartoon.png" alt="Taxation Without Representation Cartoon" class="img-fluid"></img>
+                        <p><strong>Analysis:</strong> This cartoon shows a king defending taxation without representation as cultural heritage, likely satirizing British rule during the American Revolution (circa 1770s). The colonist’s confusion highlights the liberal principle of consent of the governed, clashing with monarchical authority. The exaggerated crown and speech bubble emphasize the critique of unjust governance.</p>
+                        <p><strong>Questions:</strong></p>
+                        <ul>
+                            <li>What symbols (e.g., crown, scroll) represent authority or resistance?</li>
+                            <li>How does this reflect early liberal challenges to traditional power structures?</li>
+                            <li>Is the cartoon pro-colonial or anti-monarchical? Justify your answer.</li>
+                        </ul>
+                    </div>
+                    <div class="cartoon-placeholder">
+                        <img src="./assets/industry-cartoon.png" alt="Protectors of Our Industries Cartoon" class="img-fluid"></img>
+                        <p><strong>Analysis:</strong> From Puck magazine, this cartoon portrays industrialists lounging on a raft labeled with tariffs and industries, supported by laboring workers. The chains and ocean suggest exploitation under the guise of protectionism, critiquing late 19th-century American economic policies. It aligns with debates on free markets vs. government intervention, a key liberal economic theme.</p>
+                        <p><strong>Questions:</strong></p>
+                        <ul>
+                            <li>Identify the symbols of wealth (e.g., top hats, raft) and labor (e.g., workers, chains).</li>
+                            <li>Does this support or critique laissez-faire economics? Explain.</li>
+                            <li>How might this relate to modern globalization debates on fair trade?</li>
+                        </ul>
+                    </div>
+                    <h3>Practice: Quote Analysis</h3>
+                    <div class="source">
+                        <p><strong>Quote: Elizabeth Warren on Inequality (2019):</strong></p>
+                        <p class="source-excerpt">“The top 1% own more wealth than the bottom 90%. That’s not a free market; that’s a rigged game.”</p>
+                        <p><strong>Questions:</strong></p>
+                        <ul>
+                            <li>What liberal principle does Warren emphasize?</li>
+                            <li>How does this critique classical liberalism?</li>
+                        </ul>
+                    </div>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Bias:</strong> Prejudice influencing perspective.</div>
+                        <div class="glossary-item"><strong>Primary Source:</strong> Original document or artifact.</div>
+                        <div class="glossary-item"><strong>Perspective:</strong> Viewpoint shaped by ideology, context.</div>
+                    </div>
+                </div>
+                    {/* Section 10: Exam Preparation */}
+          <div class="section" id="exam-prep">
+                    <h2>Exam Preparation</h2>
+                    <h3>Diploma Exam Structure</h3>
+                    <p>Social Studies 30-2 exam (Alberta):</p>
+                    <ul>
+                        <li><strong>Part A: Written Response</strong> Source analysis (3 sources: cartoon, quote, graph); position paper on ideological issue.</li>
+                        <li><strong>Part B: Multiple Choice</strong> 50–60 questions; tests knowledge, source interpretation.</li>
+                    </ul>
+                    <h3>Tips</h3>
+                    <ul>
+                        <li><strong>Source Analysis:</strong> Practice identifying bias, perspective; link to ideologies.</li>
+                        <li><strong>Position Paper:</strong> Clear thesis; use evidence (historical, contemporary); address counterarguments.</li>
+                        <li><strong>Multiple Choice:</strong> Focus on key terms, events; eliminate wrong answers.</li>
+                        <li><strong>Time Management:</strong> Part A (2–3 hours), Part B (1 hour).</li>
+                    </ul>
+                    <h3>Sample Position Paper Prompt</h3>
+                    <p><strong>Prompt:</strong> To what extent should individual rights be sacrificed for collective security?</p>
+                    <p><strong>Outline:</strong></p>
+                    <ul>
+                        <li><strong>Thesis:</strong> Individual rights should be balanced with collective security, as extreme sacrifices undermine liberalism.</li>
+                        <li><strong>Evidence:</strong> Patriot Act (2001) vs. Canadian Charter; WWII internment vs. modern surveillance.</li>
+                        <li><strong>Counterargument:</strong> Security prevents terrorism but risks authoritarianism.</li>
+                    </ul>
+                    <h3>Glossary</h3>
+                    <div class="glossary">
+                        <div class="glossary-item"><strong>Thesis:</strong> Main argument in an essay.</div>
+                        <div class="glossary-item"><strong>Counterargument:</strong> Opposing viewpoint addressed.</div>
+                        <div class="glossary-item"><strong>Source Interpretation:</strong> Analyzing documents for meaning.</div>
+                    </div>
+                </div>
+          {/* Section 11: Review Questions */}
           <div className="section" id="review">
             <h2>Review Questions</h2>
             <p>Test your knowledge with these questions, covering all Social Studies 30-2 topics.</p>
