@@ -1,13 +1,62 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import confetti from 'canvas-confetti';
 
 export default function Home() {
+  const [isFunMode, setIsFunMode] = useState(false);
+  const [hasSoundPermission, setHasSoundPermission] = useState(false);
+
+  useEffect(() => {
+    if (!isFunMode) return;
+
+    // Trigger confetti burst when Fun Mode is activated
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+
+    // Request sound permission (one-time prompt)
+    if (!hasSoundPermission) {
+      const permitSound = confirm('Allow sound effects for Fun Mode?');
+      setHasSoundPermission(permitSound);
+    }
+
+    // Spawn images at random intervals
+    const interval = setInterval(() => {
+      spawnFunImage(hasSoundPermission);
+    }, Math.random() * 4000 + 1000); // 1–5 seconds
+
+    return () => clearInterval(interval);
+  }, [isFunMode, hasSoundPermission]);
+
+  // Function to spawn a fun image (defined in public/scripts/funmode.js)
+  const spawnFunImage = (playSound) => {
+    if (typeof window.spawnFunImage === 'function') {
+      window.spawnFunImage(playSound);
+    }
+  };
+
   return (
-    <main className="container">
+    <main className="container position-relative">
       <Head>
         <title>Social Studies 30-2 Comprehensive Study Guide</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="/scripts/funmode.js" defer></script>
       </Head>
+      {/* Fun Mode Button */}
+      <button
+        className="btn btn-warning position-absolute"
+        style={{ top: '10px', right: '10px', zIndex: 1000 }}
+        onClick={() => setIsFunMode(!isFunMode)}
+        aria-label={isFunMode ? 'Disable Fun Mode' : 'Enable Fun Mode'}
+        aria-pressed={isFunMode}
+      >
+        {isFunMode ? 'Exit Fun Mode' : 'Fun Mode'}
+      </button>
+      {/* Fun Mode Container */}
+      <div id="funmode-container" style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', pointerEvents: 'none', zIndex: 999 }}></div>
       <div className="row">
         {/* Sidebar Navigation */}
         <div className="col-md-3">
@@ -816,7 +865,7 @@ export default function Home() {
                         <div class="glossary-item"><strong>Source Interpretation:</strong> Analyzing documents for meaning.</div>
                     </div>
                 </div>
-          {/* Section 11: Review Questions */}
+          {/* Section 1: Review Questions */}
           <div className="section" id="review">
             <h2>Review Questions</h2>
             <p>Test your knowledge with these questions, covering all Social Studies 30-2 topics.</p>
