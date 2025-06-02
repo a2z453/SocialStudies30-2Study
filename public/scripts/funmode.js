@@ -29,7 +29,6 @@ function spawnFunImage(playSound) {
   img.style.left = `${startX}px`;
   img.style.top = `${startY}px`;
 
-  // Determine if this image should "zoom across the screen"
   const isZoomMode = Math.random() < 0.25;
 
   const endX = isZoomMode
@@ -41,23 +40,24 @@ function spawnFunImage(playSound) {
     : startY + (Math.random() * 400 - 200);
 
   const duration = isZoomMode
-    ? Math.random() * 2 + 1 // 1–3s for zoomers
-    : Math.random() * 5 + 5; // 5–10s normal
+    ? Math.random() * 2 + 1
+    : Math.random() * 5 + 5;
 
   const scale = isZoomMode
-    ? Math.random() * 3 + 2 // 2x–5x
-    : Math.random() * 1.5 + 0.5; // 0.5x–2x
+    ? Math.random() * 3 + 2
+    : Math.random() * 1.5 + 0.5;
 
   const rotate = Math.random() * 720 - 360;
-  const filter = `hue-rotate(${Math.random() * 360}deg) brightness(${Math.random() * 0.5 + 0.75})`;
+
+  const baseHue = Math.random() * 360;
+  const brightness = Math.random() * 0.5 + 0.75;
+  const shadowColor = isZoomMode ? 'yellow' : 'white';
+  const dropShadow = `drop-shadow(0 0 ${isZoomMode ? '20px' : '10px'} ${shadowColor})`;
+
+  img.style.transform = `scale(${scale})`;
+  img.style.filter = `hue-rotate(${baseHue}deg) brightness(${brightness}) ${dropShadow}`;
 
   const animId = Date.now();
-  img.style.transform = `scale(${scale})`;
-  img.style.filter = filter;
-  img.style.boxShadow = isZoomMode
-    ? '0 0 30px rgba(255, 255, 0, 0.8)' // brighter glow for zoomers
-    : '0 0 10px rgba(255, 255, 255, 0.5)';
-
   img.style.animation = `
     fly-${animId} ${duration}s linear forwards,
     spin-${animId} ${duration / 2}s linear infinite
