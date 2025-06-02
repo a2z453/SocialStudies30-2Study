@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #343a40;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.event, .ideology, .term, .question, .source {
+  background-color: #e9ecef;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #007bff;
+}
+
+.drop-zone {
+  border: 2px dashed #6c757d;
+  padding: 20px;
+  margin: 10px 0;
+  min-height: 50px;
+  background-color: #f1f3f5;
+}
+
+.draggable {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  cursor: move;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.placed {
+  background-color: #28a745;
+}
+
+.cartoon-placeholder, .graph-placeholder, .map-placeholder {
+  background-color: #dee2e6;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  border: 1px solid #ced4da;
+}
+
+.timeline {
+  border-left: 4px solid #007bff;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+}
+
+.glossary {
+  column-count: 2;
+  margin: 20px 0;
+}
+
+.glossary-item {
+  margin-bottom: 10px;
+}
+
+.form-select, .form-check, .form-control {
+  margin: 10px 0;
+}
+
+#submitIdeologies, #submitAlliances, #submitQuiz {
+  margin-top: 20px;
+}
+
+.nav-sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+.source-excerpt {
+  font-style: italic;
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.quiz-feedback {
+  margin-top: 20px;
+}
