@@ -1,8 +1,7 @@
-// pages/_app.js
-import '@/styles/globals.css'; // Use '@/...' if using path aliases
-// or
-// import '../styles/globals.css'; // If not using aliases
+import '../styles/globals.css';
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
+
+export default MyApp;
